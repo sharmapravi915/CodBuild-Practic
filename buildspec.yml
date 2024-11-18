@@ -16,6 +16,8 @@ phases:
             - echo "Start the installation process"
             - echo "Installation Process Completed"
             - echo "Hey welcome to AWS $Name"
+            - echo "My code build id is $CODEBUILD_BUILD_ID"
+            - echo "My Golang version is $GOLANG_12_VERSIONGOLANG_12_VERSION"
     pre_build:
         commands: 
             - echo "This is the start of Pre-Build phase"
